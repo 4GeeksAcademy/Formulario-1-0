@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body class="bg-light">
+
+    <div class="container mt-4">
+        <div class="card">
+            <div class="card-header">
+                <h3>Payment form example</h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="alert alert-danger">
+                    Some fields are missing
+                </div>
+
+                <form>
+
+                    <div class="row mb-3">
+                        <div class="col-md-5">
+                            <label class="form-label">Card #</label>
+                            <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" required>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">CVC #</label>
+                            <input type="text" class="form-control" placeholder="0000" maxlength="4"
+                                pattern="[0-9]{3,4}" required>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label class="form-label">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" placeholder="Amount" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">First Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Last Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">City</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">State</label>
+                            <select class="form-select" required>
+                                <option value="">Pick a state</option>
+                                <option>Canarias</option>
+                                <option>Republica checa</option>
+                                <option>Catalunya</option>
+                                <option>Madrid</option>
+                                <option>Paris</option>
+                                <option>Noruega</option>
+                                <option>Albania</option>
+                                <option>Suisa</option>
+                                <option>Palestina</option>
+                                <option>Rusia</option>
+                                <option>Romania</option>
+                                <option>Alemania</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label class="form-label">Postal Code</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="form-label">We accept:</label>
+
+                            <div class="btn-group w-100" role="group">
+
+                                <input type="radio" class="btn-check" name="payment" id="visa" required>
+
+                                <label class="btn btn-secondary" for="visa">
+                                    <i class="fa-brands fa-cc-visa" style="color: rgb(19, 214, 209);"></i>Visa
+                                </label>
+
+                                <input type="radio" class="btn-check" name="payment" id="mastercard">
+
+                                <label class="btn btn-secondary" for="mastercard">
+                                    <i class="fa-brands fa-cc-mastercard" style="color: rgb(239, 18, 18);"></i>Mastercad
+                                </label>
+
+                                <input type="radio" class="btn-check" name="payment" id="amex">
+
+                                <label class="btn btn-secondary" for="amex">
+                                    <i class="fa-brands fa-cc-amex" style="color: rgb(59, 180, 40);"></i>American
+                                    Express
+                                </label>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Message</label>
+
+                            <textarea class="form-control" rows="3" placeholder="Add any notes here."
+                                required></textarea>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="text-end">
+                        <button type="reset" class="btn btn-secondary">
+                            Cancel
+                        </button>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
