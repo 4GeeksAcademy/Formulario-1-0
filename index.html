@@ -95,31 +95,33 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-6">
-                            <label class="form-label">We accept:</label>
-
-                            <div class="btn-group w-100" role="group">
-
-                                <input type="radio" class="btn-check" name="payment" id="visa" required>
-
-                                <label class="btn btn-secondary" for="visa">
-                                    <i class="fa-brands fa-cc-visa" style="color: rgb(19, 214, 209);"></i>Visa
-                                </label>
-
-                                <input type="radio" class="btn-check" name="payment" id="mastercard">
-
-                                <label class="btn btn-secondary" for="mastercard">
-                                    <i class="fa-brands fa-cc-mastercard" style="color: rgb(239, 18, 18);"></i>Mastercad
-                                </label>
-
-                                <input type="radio" class="btn-check" name="payment" id="amex">
-
-                                <label class="btn btn-secondary" for="amex">
-                                    <i class="fa-brands fa-cc-amex" style="color: rgb(59, 180, 40);"></i>American
-                                    Express
-                                </label>
-
-                            </div>
+                        <div class="col-md-6 mb-3">
+                            <fieldset class="border-0 p-0 m-0" >
+                                <legend class="d-block h6 mb-2">We accept</legend>
+                                <div class="icons-weAcept">
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" id="visa" value="visa"
+                                            name="weAcept" required>
+                                        <label for="visa"><i class="fa-brands fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input" id="masterCard" value="masterCard"
+                                            name="weAcept">
+                                        <label for="masterCard"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input " id="diners" value="diners"
+                                            name="weAcept">
+                                        <label for="diners"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                    </div>
+                                    <div class="form-check-inline">
+                                        <input type="radio" class="form-check-input " id="americanExpress"
+                                            name="weAcept" value="americanExpress">
+                                        <label for="americanExpress"><i class="fa-brands fa-cc-amex"></i></label>
+                                    </div>
+                                </div>
+                                <div id="cardTypeFeedback" class="invalid-feedback d-none">Choose one card type.</div>
+                            </fieldset>
                         </div>
 
                         <div class="col-md-6">
